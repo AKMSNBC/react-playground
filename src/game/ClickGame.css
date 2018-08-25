@@ -1,0 +1,87 @@
+.click-game .header {
+  background-color: #222;
+  color: white;
+  padding: 20px 0 0 5px;
+}
+
+.click-game .header h1 {
+  margin: 0 0 0 0;
+}
+
+.display-start-screen, .display-winner-panel {
+  font-size: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+.start-welcome, .start-controls, .winner-msg {
+  text-align: center;
+}
+
+.start-controls input {
+  border-color: black;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+}
+
+@keyframes react-logo-start {
+    0%   {fill: #61DAFB;}
+    25%  {fill: red;}
+    50%  {fill: blue;}
+    75%  {fill: green;}
+    100% {fill: #61DAFB;}
+    from {
+      transform: rotateY(0deg)
+    } to {
+      transform: rotateY(360deg)
+    }
+}
+
+.display-start-screen svg, .winner-msg svg {
+  animation: react-logo-start 5s infinite;
+}
+
+.display-react-score svg {
+  fill: #61DAFB;
+}
+
+@keyframes rotateClockwise {
+  0%   {fill: #61DAFB;}
+  25%  {fill: red;}
+  50%  {fill: blue;}
+  75%  {fill: green;}
+  100% {fill: #61DAFB;}
+  from {
+    transform: rotate(0deg)
+  } to {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes rotateCounterClockwise {
+  0%   {fill: #61DAFB;}
+  25%  {fill: red;}
+  50%  {fill: blue;}
+  75%  {fill: green;}
+  100% {fill: #61DAFB;}
+  from {
+    transform: rotate(360deg)
+  } to {
+    transform: rotate(0deg)
+  }
+}
+
+.rotate-counter-clockwise {
+  animation: rotateCounterClockwise 2s linear infinite;
+}
+
+.rotate-clockwise {
+  animation: rotateClockwise 2s linear infinite;
+}
